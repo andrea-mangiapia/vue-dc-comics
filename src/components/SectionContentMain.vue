@@ -1,13 +1,13 @@
 <template>
     <section class="content-main">
         <div class="container">
-        <div class="content-main">
-            <h2>
-                Content Goes Here
-            </h2>
+            <div>
+                <h2>
+                    Content Goes Here
+                </h2>
 
+            </div>
         </div>
-    </div>
 
     </section>
 </template>
