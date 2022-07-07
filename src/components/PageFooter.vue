@@ -1,9 +1,10 @@
 <template>
   <footer>
-    <!-- Footer Top -->
+    <!-- Footer Main -->
     <div class="footer-main">
       <div class="container am-flex">
         <div class="col-left am-flex">
+          <!-- Menu Footer -->
           <div class="menu-footer">
             <h3>
               Dc Comics
@@ -26,6 +27,7 @@
               <li><a href="#">Shop DC Collectibles</a></li>
             </ul>
           </div>
+          <!-- Menu Footer -->
           <div class="menu-footer">
             <h3>
               Dc
@@ -44,6 +46,7 @@
               <li><a href="#">Contact Us</a></li>
             </ul>
           </div>
+          <!-- Menu Footer -->
           <div class="menu-footer">
             <h3>
               Sites
@@ -65,12 +68,57 @@
 
     <!-- Footer Bottom -->
     <div class="footer-bottom">
-      <div class="container am-flex">
-        <div class="left">
-          <button>Sign-Up Now!</button>
-        </div>
-        <div class="right">
-          Testo right
+      <div class="container">
+        <div class="content-footer-bottom am-flex">
+          <div class="left">
+            <!-- Button CTA -->
+            <a href="#" class="btn-cta">
+                sign-up now!
+            </a>
+          </div>
+          <!-- Icon Social -->
+          <div class="icons-social">
+            <h3>
+              Follow Us
+            </h3>
+            <ul>
+              <li>
+                <!-- Facebook -->
+                <a href="#">
+                  <img src="../assets/img/footer-facebook.png" alt="Facebook">
+                </a>
+              </li>
+
+              <li>
+                <!-- Twitter -->
+                <a href="#">
+                  <img src="../assets/img/footer-twitter.png" alt="Twitter">
+                </a>
+              </li>
+
+              <li>
+                <!-- Youtube -->
+                <a href="#">
+                  <img src="../assets/img/footer-youtube.png" alt="Youtube">
+                </a>
+              </li>
+
+              <li>
+                <!-- Pinterest -->
+                <a href="#">
+                  <img src="../assets/img/footer-pinterest.png" alt="Pinterest">
+                </a>
+              </li>
+
+              <li>
+                <!-- Periscope -->
+                <a href="#">
+                  <img src="../assets/img/footer-periscope.png" alt="Periscope">
+                </a>
+              </li>
+            </ul>
+          </div>
+
         </div>
       </div>
       
@@ -89,6 +137,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import "../style/variables";
+.am-flex {
+    justify-content: space-between;
+}
 .footer-main {
   padding: 20px 0;
   background-image: url(../assets/img/footer-bg.jpg);
@@ -98,6 +149,7 @@ export default {
   .col-left {
     h3 {
       margin: 10px 0;
+      text-transform: uppercase;
     }
     .menu-footer {
       margin-right: 20px;
@@ -118,20 +170,54 @@ export default {
     position: absolute;
     top:-40px;
     right:50px;
-    
+
     img {
         width: 350px;
     }
   }
+}
+
+.content-footer-bottom {
+  align-items: center;
 }
 .footer-bottom {
   padding: 20px 0;
   background-color: $brand_secondary_color;
   color: white;
   position: relative;
+  text-transform: uppercase;
+
+  .btn-cta {
+    color: white;
+    border: 2px solid $brand_main_color;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+
 }
 
-.am-flex {
-    justify-content: space-between;
+.icons-social {
+  display: flex;
+  align-items: center;
+
+  h3 {
+    color: $brand_main_color;
   }
+
+  .follow-us {
+    text-transform: uppercase;
+    color: $brand_secondary_color;
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 20px;
+  }
+
+  ul {
+    display: flex;
+    
+    li {
+      margin: 0 10px;
+    }
+  }
+}
 </style>
