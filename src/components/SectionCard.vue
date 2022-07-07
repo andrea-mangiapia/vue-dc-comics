@@ -1,7 +1,7 @@
 <template>
     <section class="content-main">
         <div class="container">
-            <h2>
+            <h2 class="title-section">
                 Current Series
             </h2>
 
@@ -34,16 +34,28 @@ export default {
 <style scoped lang="scss">
 @import "../style/variables";
 
+
+.section{
+    position: absolute;
+}
 .content-main {
     background-color: $section_color_primary;
     color: white;
-    padding: 30px 0;
     text-transform: uppercase;    
 }
 
 .cards {
     display: flex;
     flex-wrap: wrap;
+}
+
+.title-section {
+    background-color: $brand_main_color;
+    color: white;
+    display: inline-block;
+    padding: 7px 20px;
+    position: relative;
+    top: -20px;
 }
 
 </style>

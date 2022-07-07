@@ -88,7 +88,12 @@ export default {
 @import "../style/variables";
 
 header {
+    background-color: white;
+    width: 100%;
     height: 100px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
     .main-header {
         display: flex;
         justify-content: space-between;

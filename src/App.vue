@@ -4,7 +4,8 @@
     <PageHeader/>
 
     <!-- MAIN -->
-    <main>   
+    <main>
+      <SectionJumbotron />  
       <SectionCard/> 
       <SectionContentMain/>
       <SectionBuyList/>    
@@ -18,8 +19,8 @@
 
 <script>
 import PageHeader from './components/PageHeader.vue';
+import SectionJumbotron from './components/SectionJumbotron.vue';
 import SectionCard from './components/SectionCard.vue';
-import SectionContentMain from './components/SectionContentMain.vue';
 import SectionBuyList from './components/SectionBuyList.vue';
 import PageFooter from './components/PageFooter.vue';
 
@@ -27,8 +28,8 @@ export default {
   name: 'App',
   components: {
     PageHeader,
+    SectionJumbotron,
     SectionCard,
-    SectionContentMain,
     SectionBuyList,
     PageFooter
 }
@@ -37,5 +38,8 @@ export default {
 
 <style lang="scss">
 @import "./style/common";
+main {
+  margin-top: 100px;
+}
 
 </style>
