@@ -6,7 +6,7 @@
             </h2>
 
             <div class="cards">
-                <SingleCard />                
+                <SingleCard v-for="element, index in cards" :key="index" :cardDetails="element" />                
 
             </div>
 
@@ -100,9 +100,6 @@ export default {
             ]
         };
     }
-    /* props: {
-        cardsComics: Object
-    }, */
 }
 </script>
 
