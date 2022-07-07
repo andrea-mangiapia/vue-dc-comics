@@ -7,7 +7,6 @@
     <main>
       <SectionJumbotron />  
       <SectionCard/> 
-      <SectionContentMain/>
       <SectionBuyList/>    
     </main>
 

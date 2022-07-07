@@ -29,6 +29,17 @@ export default {
 width: calc((100% / 6) - 20px);
 margin: 10px 10px 30px 10px;
 
+    .img-card {
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+            aspect-ratio: 1 / 1;
+        }
+    }
+    
+
     .series-card {
         margin-top: 10px;
         font-size: 14px;
